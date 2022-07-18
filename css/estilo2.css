@@ -1,0 +1,425 @@
+/**MEDIA**/
+
+
+@media(max-width:2070px){
+    .nav-menu{
+      width: 60%;
+    }
+  .sobreMi{
+    width: 40%;
+  }
+
+  .CirculoExp{
+    width: 20%;
+  }
+
+  .items{
+    padding: 0 4.9rem;
+  }
+  .miEducation , .miExperiencia{
+    width: 46%;
+  }
+    .barraStyle{
+        width:590px ;
+    }
+  }
+  
+  @media(max-width:1566px) {
+
+    .nav-menu{
+        width: 80%;
+    }
+    
+    .sobreMi{
+        width: 50%;
+    }
+
+    .CirculoExp{
+        width: 30%;
+    }
+
+    .items{
+        padding: 0 5rem;
+    }
+
+    #Portfolio img{
+        width: 300px;
+        height: 300px;
+    }
+  }
+
+@media(max-width:1400px){
+    .barraStyle{
+        width: 460px;
+    }
+    .miEducation , .miExperiencia{
+        width: 38%;
+    }
+
+    .itemServicio{
+        grid-template-columns: 350px 350px 350px;
+    }
+
+}
+
+@media(max-width:1250px){
+    .foto{
+        width: 350px;
+        height: 370px;
+    }
+   
+    .imagenfoto{
+        width: 60%;
+    }
+    .centrar{
+        width: 90%;
+    }
+
+    .nav-menu{
+        width:100%;
+    }
+
+    .items{
+        padding: 0 5rem
+    }
+
+    .itemsDos{
+        margin-top: 3rem;
+    }
+
+    
+    .itemsAbout{
+        flex-direction: column;
+      
+    }
+
+    .centrar h1{
+        font-size: 2.5rem;
+    }
+
+    .centrar h2{
+        font-size: 5.3rem;
+    }
+
+    .contacto-izq{
+        width: 40%;
+    }
+}
+
+@media(max-width:1100px){
+    .barraStyle{
+        width:400px;
+    }
+
+    .miExperiencia{
+        padding-left: 1rem;
+      }
+
+      .itemServicio{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        
+         
+      }
+}
+
+
+/**TABLET**/
+
+@media(max-width:999px){
+
+
+    .menulink{
+        display:none
+    }
+
+    .burger{
+        display: inline !important;
+     margin-right: rem;
+    }
+ 
+    .nav-menu{
+        justify-content: space-around;
+       
+        
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .foto{
+        width: 450px;
+        height: 470px;
+    }
+   
+    .imagenfoto{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .centrar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .cuadroacerca{
+   
+        display: flex;
+        justify-content: center;
+        flex-direction: column;   
+      }
+
+      .sobreMi {
+        width: 90%;
+        text-align: center;
+        margin-left:2rem ;
+        padding-right: 2rem;
+      }
+      
+      .CirculoExp{
+        width: 100%;
+    }
+
+    .itemServicio{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        
+      }
+
+      .titulos h4{
+        text-align: center;
+        
+       
+      }
+
+      .cuadroEduc-exp{
+        flex-direction: column;
+      
+      }
+      .miEducation , .miExperiencia{
+        width: 80%;
+    }
+
+    .miExperiencia{
+        padding-left:0;
+      }
+
+      .barraStyle{
+        width:320px;
+      }
+
+      .imagenes{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #Portfolio img{
+        width: 336px;
+        height: 330px;
+    }
+   
+    #Contacto{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+      }
+
+      .contacto-izq{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contacto-der{
+
+        width: 80%;
+        margin-left: 0;
+      }
+
+      .contacto-der h4{
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+     
+    
+}
+
+@media(max-width:769px){
+
+ .habilidades{
+    flex-direction: column;
+ }
+
+ .barraStyle{
+    width: 500px;
+ }
+
+ .skill-uno{
+    margin-right: 0;
+    margin-left:0;
+  }
+
+  #Portfolio img{
+    width: 270px;
+    height: 270px;
+}
+
+}
+
+
+/**CELULAR--*/
+
+@media(max-width:578px){
+    .miEducation, .miExperiencia{
+        margin-left:1rem;           /*TAMBIEN MEDIA en 670*/
+    }
+
+    .itemServicio{
+        display: grid;
+        grid-template-columns: 100%;
+        
+      }
+
+      .foto{
+        width: 380px;
+        height: 400px;
+    }
+
+    .imagenes{
+        grid-template-columns: auto;
+      }
+
+      #Portfolio img{
+        width: 450px;
+        height: 450px;
+    }
+
+    .items p{
+        font-size: 01rem;
+    }
+    
+    .itemsAbout{
+        align-items: flex-start;
+    }
+
+    .barraStyle{
+        width: 400px;
+    }
+
+    .centrar{
+        width: 100%;
+    }
+
+    .sobreMi {
+        width: 100%;
+        text-align: center;
+        margin-left:0 ;
+        padding-right: 0;
+      }
+      
+      .centrar h2{
+        font-size: 4rem;
+      }
+
+      .centrar h1{
+        font-size: 2rem;
+      }
+
+      .centrar p{
+        font-size:1.3rem ;
+      }
+
+      .formulario button{
+        align-self: center;
+      }
+
+      .enlacesPort{
+        overflow:hidden;
+        overflow-x:auto
+      }
+
+    }
+
+    @media(max-width:420px){
+        .foto{
+            width: 300px;
+            height: 320px;
+        }
+
+        .centrar h2{
+            font-size:3.5rem ;
+            margin-left: 1rem;
+        }
+
+        .barraStyle{
+            width: 250px;
+        }
+
+        #Portfolio img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media(max-width:376px){
+
+        .foto{
+            width:200px;
+            height: 210px;
+            text-align: center;
+        }
+        .centrar h2{
+            font-size: 2.8rem;
+        }
+
+        .centrar h1{
+            font-size: 1.8rem;
+        }
+
+        .centrar p{
+            font-size: 1rem;
+        }
+
+        .centrar button{
+            padding: 1rem 1rem;
+        }
+
+        .centrar .botones{
+            display: flex;
+            flex-direction: column;
+    
+        }
+
+        nav{
+            width: 100vw;
+        }
+
+        .logo h4{
+            font-size: 1rem;
+        }
+
+    }
+
+
+
+    @media(max-width:290px){
+       
+        #Portfolio img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .items p {
+            font-size: 0.5rem;
+        }
+        
+
+    }
+
+        

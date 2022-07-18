@@ -1,0 +1,749 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1a1d22;
+    box-sizing: border-box;
+    
+}  
+
+/**MENU**/
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.1rem;
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+    position: fixed;  
+    z-index: 10; 
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+       
+}
+
+nav h4{
+    font-size: 1.8rem;
+    font-weight: 900;   
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+
+.menulink a{
+    text-decoration: none;
+    color: #1a1d22;
+    font-weight: 600;
+   margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.menulink a:hover{
+  border-bottom: 4px solid #f5df4e;
+  transition: 0.2s ease-out;
+}
+
+
+.redes{
+    padding-right: 2rem; 
+}
+
+.redes a i{
+    color: #4d555a;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.face:hover{
+  color: royalblue;
+  transform:scale(1.1);
+  transition: 0.2s;
+}
+
+.twitter:hover{
+  color: deepskyblue;
+  transform:scale(1.1);
+  transition: 0.2s;
+}
+
+.insta:hover{
+  color: indigo;
+  transform:scale(1.1);
+  transition: 0.2s;
+}
+
+
+.burger{
+    display:none !important;
+}
+
+/**PORTADA**/
+
+.main{
+    width: 100%;
+    background-color: #f5df4e;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     margin: auto;
+    box-sizing: border-box;  /**REVEEER**/
+    
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foto{
+    width: 450px;
+    height: 470px;
+    background-color: #f5df4e;
+    border-radius: 100%;
+    margin-left: 3rem;
+}
+
+.foto .imagencircular{
+    width: 100%;
+    height: 100%;
+    border-radius:100%;
+    border: solid 1rem #fff;
+}
+
+
+.centrar{
+    width: 60%;
+}
+
+.imagenfoto {
+    width: 40%;
+    margin-right: 2rem;
+}
+.centrar h1{
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.centrar h2{
+    font-weight: 600;
+    font-size: 6.5rem;
+    margin-bottom: 0;
+    animation-name:parpadeo;
+    animation-duration:4s;
+    animation-delay:1.5s;
+    animation-iteration-count:infinite; 
+}
+
+
+@keyframes parpadeo{
+
+  0%{opacity:0};
+  
+
+  50%{opacity: 1};
+
+  100%{opacity: 100}
+}
+
+.centrar p{
+    font-size: 1.35rem;
+   margin-bottom: 1.7rem;
+   margin-top: 0;
+
+}
+
+.botones a button{
+    padding: 1.18rem 2.6rem;
+    background-color: #1a1d22;
+    color: #efefef;
+    font-weight: 500;
+    margin-top: 1rem;
+    border: #1a1d22;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botones a button:hover{
+  transform: scale(1.02);
+  box-shadow: rgba(99, 99, 99, 0.1) 3px 5px;
+}
+
+.botones  .contactame{
+    font-weight: 500;
+    padding: 1.18rem 2.6rem;
+}
+
+.botones .contactame i{
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+
+  .flechi{
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    left: 50%;
+    font-size: 1.4rem;
+  }
+
+  .flechi:hover{
+    transform: scale(1.5);
+  }
+
+  /**ACERCA DE MI**/
+
+  #Acerca{
+    padding:6.5rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+  }
+
+  .cuadroacerca{
+   
+    display: flex;
+    justify-content: center;
+      
+  }
+
+  .sobreMi {
+    width: 35%;
+  }
+  
+  .CirculoExp{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   
+    
+  }
+  #Acerca .tituloparrafo{
+    margin-top: 0;
+    padding-left: 0.5rem;
+    padding-right: .5rem;
+    background-color: #f5df4e;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+  }
+
+  #Acerca .conoceme{
+    font-weight: 600;
+    font-size:2.5rem ;
+    margin-bottom: 2.5rem;
+  }
+
+  .sobreMi h5{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .letrabold{
+    font-weight: 700;
+    border-bottom: solid 3px #f5df4e;
+  }
+
+.sobreMi p{
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    
+}
+
+ 
+
+  .circuloNum{
+    margin:0 auto 1.5rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: #f5df4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 9.5rem;
+    border-radius: 100%;
+   
+    
+  }
+
+  .circuloNum p{
+    color: #4d555a;
+    margin-bottom:0.45rem;
+    
+  }
+
+  .meses{
+    font-size: 1.9rem;
+    font-weight: 400;
+    
+  }
+  .CirculoExp h6 span{
+    font-weight: 700;
+  }
+
+
+
+
+  .itemsAbout{
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 2rem;
+  }
+
+  .items {
+    
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 5.1rem;
+    
+  }
+
+  .items .light{
+    font-weight: 500;
+    color: #777f85;
+    font-size: 1rem;
+  }
+
+  .itemsUno , .itemsDos{
+    display: flex;
+    
+  }
+
+  
+
+  
+  /**SERVICIOS**/
+
+  #Servicio{
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.5rem 0;
+
+  }
+
+.servicio{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}  
+
+
+.itemServicio{
+  display: grid;
+  grid-template-columns: 455px 455px 455px;
+  justify-content: space-evenly;
+   
+}
+
+.servis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 3.2rem;
+}
+
+.titulos p{
+  margin-bottom: 0.5rem;
+  background-color: #f5df4e;
+  padding:0 0.5rem;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.titulos h4{
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.servis i{
+  color: #f5df4e;
+  font-size: 3.25rem;
+  margin-bottom: 1rem;
+}
+
+.servis h5{
+  font-size: 1.50rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.servis p{
+  color: #6c757d;
+  line-height: 1.8;
+}
+
+
+/**RESUMEN**/
+
+#Resumen{
+  padding: 6.5rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cuadroEduc-exp{
+  display: flex;
+  justify-content: center;
+
+}
+
+#Resumen .titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#Resumen h5{
+  font-weight:600 ;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+ 
+#Resumen h6{
+  font-size: 1.399rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  
+}
+
+#Resumen .negrita{
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+ 
+
+}
+
+#Resumen .clarita{
+  margin-bottom: 1rem;
+  color: #777f85;
+  line-height: 1.8;
+}
+
+#Resumen hr{
+  opacity: 0.2;
+  margin-bottom: 1.5rem;
+  
+}
+
+.borde-color{
+  border-left: solid 2px #f5df4e;
+  padding-left:1rem ;
+}
+
+
+.itemprogreso{
+  display: flex;
+  justify-content: space-between;
+}
+
+.miEducation , .miExperiencia {
+  width: 50%;
+}
+
+
+
+.miExperiencia{
+  padding-left: 2.4rem;
+}
+
+.skills{
+  display:flex ;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  
+}
+
+.habilidades{
+  display: flex;
+}
+
+.skill-uno{
+  margin-right: 3.3rem;
+  margin-left: 1rem;
+}
+
+.misSkills{
+  align-self: flex-start;
+  margin-left:1rem ;
+  font-weight:600 ;
+  font-size: 1.75rem;
+}
+
+.habilidades p{
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.espacioBarra{
+  margin-bottom: 1.5rem;
+}
+
+.skills .descarga{
+  margin-top: 3rem;
+  background-color: white;
+  padding: 5rem;
+  font-weight: 500;
+  padding:0.9rem 2.7rem;
+  border-color: #1a1d22;
+  color: #1a1d22;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+
+.descarga:hover{
+  transform: scale(1.01);
+}
+
+/**PORTFOLIO**/
+
+#Portfolio{
+  padding: 6.5rem 0;
+  background-color: #f4f4f4;;
+
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Portfolio img{
+  width: 440px;
+  height: 440px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.enlacesPort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem; 
+}
+
+.enlacesPort a{
+  text-decoration: none;
+  color: #9e9e9e;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.enlacesPort a:hover{
+  color:#1a1d22;
+  border-bottom:4px solid #f5df4e;
+  transition: 0.2s ease-out;
+}
+
+.enlacesPort a:focus{
+border-bottom: 4px solid #f5df4e;
+}
+
+.imagenes{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+/**CONTACTO**/
+
+#Contacto{
+  background-color: #f5df4e;
+  padding: 6.5rem 0;
+  display: flex;
+ 
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.contacto-izq{
+  width: 20%;
+}
+
+#Contacto h4{
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.contacto-izq p{
+  font-size: 1.31rem;
+}
+
+.contacto-izq .espaciado{
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+#Contacto h6{
+  font-weight: 600;
+  font-size: 1.31rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.domicilio p{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.red{
+  margin-top: 3rem;
+
+}
+
+.red i{
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  color: #4d555a
+}
+
+.git:hover{
+  transform: scale(1.1);
+  color: black;
+  transition: 0.2s;
+}
+
+.linkedin:hover{
+  color: rgb(35, 70, 224);
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.contacto-der{
+  
+  width: 25%;
+  margin-left: 10rem;
+}
+
+.formulario input , .formulario textarea{
+  background-color: #f5df4e;
+  border: none;
+  border-bottom: solid 1px #777f85;
+  margin-bottom: 1.5rem;
+}
+
+
+.formulario button{
+  align-self: flex-start;
+  padding: 0.8rem 2.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1a1d22;
+  border:none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.formulario button:hover{
+  transform: scale(1.02);
+}
+
+.formulario label{
+  margin-bottom: 2rem;
+}
+
+form input{
+  font-size: 1.25rem;
+}
+
+/**FOOTER**/
+
+
+.footer{
+  padding: 4.1rem 0;
+  background-color: #1a1d22;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+ 
+}
+
+.footer p{
+  color: #f3f4f5
+}
+
+.footer p a{
+  color: #f5df4e;
+  font-weight: 700;
+}
+
+
+
+/**barra progreso**/
+.barraStyle{
+    border-radius: 10px;
+    height: 0.5rem;
+    width: 640px;
+}
+
+.barraStyle::-webkit-progress-bar{
+    border-radius: 10px;
+    background: rgb(230, 228, 228);
+    
+}
+
+.barraStyle::-webkit-progress-value{
+    background: #f5df4e;
+    border-radius: 10px;
+}
+
+
+
+/**---------MEDIA---------**/
+
+
